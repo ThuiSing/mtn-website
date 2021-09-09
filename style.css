@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Chronicle Display Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Chronicle Display Black"),
+    url("Chronicle Display Black.woff") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #293834;
+}
+img {
+  max-width: 100%;
+}
+
+/* header */
+header {
+  background: url(./images/bg.jpg) no-repeat top center;
+  min-height: 110vh;
+}
+.c-font {
+  font-family: "Chronicle Display Black";
+}
+.c-color {
+  color: #fbd784;
+}
+.banner_social h5 {
+  writing-mode: vertical-lr;
+  letter-spacing: 3px;
+}
+.line-text {
+  color: #fbd784;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+.line-text .line {
+  border: 1px solid #fbd784;
+  display: inline-block;
+  width: 7rem;
+  background: #fbd784;
+}
+.banner-content h1 {
+  font-size: 5.3rem;
+}
+/* main */
+main {
+  background: #293834;
+  position: relative;
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: -198px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: rgb(41, 56, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(41, 56, 52, 0.12088585434173671) 0%,
+    rgba(41, 56, 52, 1) 100%
+  );
+}
+/* Hiker */
+.hiker {
+  position: relative;
+}
+.hiker_content::before {
+  content: "01";
+  font-family: "Chronicle Display Black";
+  font-size: 18rem;
+  position: absolute;
+  top: -11%;
+  left: -7%;
+  color: #ffffff2e;
+}
+.more_btn {
+  color: #fbd784;
+  transition: 0.2s ease-in-out;
+}
+.more_btn:hover {
+  color: #e1b755;
+}
+
+/* hiker_gear */
+.hiker_gear {
+  position: relative;
+}
+.hiker_gear::before {
+  content: "02";
+  font-family: "Chronicle Display Black";
+  font-size: 18rem;
+  position: absolute;
+  top: -55%;
+  left: -13%;
+  color: #ffffff2e;
+}
+/* hiker_watch */
+.hiker_watch {
+  position: relative;
+}
+.hiker_watch::before {
+  content: "03";
+  font-family: "Chronicle Display Black";
+  font-size: 18rem;
+  position: absolute;
+  top: -55%;
+  left: -13%;
+  color: #ffffff2e;
+}
+/* footer */
+footer {
+  background: #293834;
+}
+@media (max-width: 668px) {
+  html {
+    font-size: 60%;
+  }
+  .hiker_content::before,
+  .hiker_gear::before,
+  .hiker_watch::before {
+    left: 0%;
+  }
+}
